@@ -32,36 +32,36 @@ function rechercherVainqueur(pions, joueurs, tour)
       }
 
       if (pions[0].innerHTML == joueurs[tour] &&
-         pions[3].innerHTML == joueurs[tour] &&
-         pions[6].innerHTML == joueurs[tour])
+          pions[3].innerHTML == joueurs[tour] &&
+          pions[6].innerHTML == joueurs[tour])
       {
         return true;
       }
           
       if (pions[1].innerHTML == joueurs[tour] &&
-         pions[4].innerHTML == joueurs[tour] &&
-         pions[7].innerHTML == joueurs[tour])
+          pions[4].innerHTML == joueurs[tour] &&
+          pions[7].innerHTML == joueurs[tour])
       {
         return true;
       }
      
       if (pions[2].innerHTML == joueurs[tour] &&
-         pions[5].innerHTML == joueurs[tour] &&
-         pions[8].innerHTML == joueurs[tour])
+          pions[5].innerHTML == joueurs[tour] &&
+          pions[8].innerHTML == joueurs[tour])
       {
         return true;
       }
       
       if (pions[0].innerHTML == joueurs[tour] &&
-         pions[4].innerHTML == joueurs[tour] &&
-         pions[8].innerHTML == joueurs[tour])
+          pions[4].innerHTML == joueurs[tour] &&
+          pions[8].innerHTML == joueurs[tour])
       {
         return true;
       }
     
       if (pions[2].innerHTML == joueurs[tour] &&
-         pions[4].innerHTML == joueurs[tour] &&
-         pions[6].innerHTML == joueurs[tour])
+          pions[4].innerHTML == joueurs[tour] &&
+          pions[6].innerHTML == joueurs[tour])
       {
         return true;
       }
@@ -130,7 +130,9 @@ function main()
                   tour++;
                   tour = tour % 2;
                   afficheur.sendMessage("Joueur " + joueurs[tour] + " c'est à vous !");
-          ); }
+               }
+         });
+     }     
 } 
 
 main();
