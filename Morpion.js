@@ -130,7 +130,7 @@ function main()
                   tour++;
                   tour = tour % 2;
                   afficheur.sendMessage("Joueur " + joueurs[tour] + " c'est à vous !");
-               }
+              }
          });
      }     
 } 
