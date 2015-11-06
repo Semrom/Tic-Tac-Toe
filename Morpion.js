@@ -14,20 +14,29 @@ function rechercherVainqueur(pions, joueurs, tour)
          pions[1].innerHTML == joueurs[tour] &&
          pions[2].innerHTML == joueurs[tour])
       {
+        pions[0].style.backgroundColor = "#9ACD32";
+        pions[1].style.backgroundColor = "#9ACD32";
+        pions[2].style.backgroundColor = "#9ACD32";
         return true;
       }
-      
+
       if (pions[3].innerHTML == joueurs[tour] &&
           pions[4].innerHTML == joueurs[tour] &&
           pions[5].innerHTML == joueurs[tour])
       {
+        pions[3].style.backgroundColor = "#9ACD32";
+        pions[4].style.backgroundColor = "#9ACD32";
+        pions[5].style.backgroundColor = "#9ACD32";
         return true;
       }
-      
+
       if (pions[6].innerHTML == joueurs[tour] &&
           pions[7].innerHTML == joueurs[tour] &&
           pions[8].innerHTML == joueurs[tour])
       {
+        pions[6].style.backgroundColor = "#9ACD32";
+        pions[7].style.backgroundColor = "#9ACD32";
+        pions[8].style.backgroundColor = "#9ACD32";
         return true;
       }
 
@@ -35,34 +44,49 @@ function rechercherVainqueur(pions, joueurs, tour)
           pions[3].innerHTML == joueurs[tour] &&
           pions[6].innerHTML == joueurs[tour])
       {
+        pions[0].style.backgroundColor = "#9ACD32";
+        pions[3].style.backgroundColor = "#9ACD32";
+        pions[6].style.backgroundColor = "#9ACD32";
         return true;
       }
-          
+
       if (pions[1].innerHTML == joueurs[tour] &&
           pions[4].innerHTML == joueurs[tour] &&
           pions[7].innerHTML == joueurs[tour])
       {
+        pions[1].style.backgroundColor = "#9ACD32";
+        pions[4].style.backgroundColor = "#9ACD32";
+        pions[7].style.backgroundColor = "#9ACD32";
         return true;
       }
-     
+
       if (pions[2].innerHTML == joueurs[tour] &&
           pions[5].innerHTML == joueurs[tour] &&
           pions[8].innerHTML == joueurs[tour])
       {
+        pions[2].style.backgroundColor = "#9ACD32";
+        pions[5].style.backgroundColor = "#9ACD32";
+        pions[8].style.backgroundColor = "#9ACD32";
         return true;
       }
-      
+
       if (pions[0].innerHTML == joueurs[tour] &&
           pions[4].innerHTML == joueurs[tour] &&
           pions[8].innerHTML == joueurs[tour])
       {
+        pions[0].style.backgroundColor = "#9ACD32";
+        pions[4].style.backgroundColor = "#9ACD32";
+        pions[8].style.backgroundColor = "#9ACD32";
         return true;
       }
-    
+
       if (pions[2].innerHTML == joueurs[tour] &&
           pions[4].innerHTML == joueurs[tour] &&
           pions[6].innerHTML == joueurs[tour])
       {
+        pions[2].style.backgroundColor = "#9ACD32";
+        pions[4].style.backgroundColor = "#9ACD32";
+        pions[6].style.backgroundColor = "#9ACD32";
         return true;
       }
 }
@@ -74,7 +98,7 @@ function matchNul(pions)
          if (pions[i].innerHTML.length == 0)
               return false;
      }
-     
+
      return true;
 }
 
@@ -86,7 +110,7 @@ var Afficheur = function(element)
      {
          affichage.innerHTML = message;
      }
-     
+
      return {sendMessage : setText};
 }
 
@@ -104,35 +128,35 @@ function main()
          {
               if (jeuEstFini)
                   return;
-                  
+
               if (!estValide(this))
               {
                   afficheur.sendMessage("Case occupée ! <br />Joueur " + joueurs[tour] + " c'est toujours à vous !");
 
-              } 
-              else 
+              }
+              else
               {
                   setSymbol(this, joueurs[tour]);
                   jeuEstFini = rechercherVainqueur(pions, joueurs, tour);
-                  
+
                   if(jeuEstFini)
                   {
-                      afficheur.sendMessage("Le joueur " + joueurs[tour] + " a gagné ! <br /> <a href=\"Morpion.html\">Rejouer</a>");
+                      afficheur.sendMessage("Le joueur " + joueurs[tour] + " a gagné ! <br /> <a href=\"morpion.html\">Rejouer</a>");
                       return;
                   }
 
                   if (matchNul(pions))
                   {
-                      afficheur.sendMessage("Match Nul ! <br/> <a href=\"Morpion.html\">Rejouer</a>");
+                      afficheur.sendMessage("Match Nul ! <br/> <a href=\"morpion.html\">Rejouer</a>");
                       return;
                   }
-                  
+
                   tour++;
                   tour = tour % 2;
                   afficheur.sendMessage("Joueur " + joueurs[tour] + " c'est à vous !");
               }
          });
-     }     
-} 
+     }
+}
 
 main();
