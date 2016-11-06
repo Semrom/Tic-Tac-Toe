@@ -9,6 +9,6 @@ Ce jeu est composé :
 - d'un fichier en JavaScript
 
 Il est possible d'y jouer ici :
-http://semrom.fr/morpion/morpion.html
+http://semrom.fr/tic-tac-toe/tic-tac-toe.html
 
 Romain Semler ©2014
