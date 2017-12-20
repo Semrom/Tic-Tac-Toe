@@ -9,6 +9,9 @@ Ce jeu est composé :
 - d'un fichier en JavaScript
 
 Il est possible d'y jouer ici :
-http://semrom.fr/tic-tac-toe/tic-tac-toe.html
+https://semrom.fr/jeux/tic-tac-toe/tic-tac-toe.html    
+     
+You can play here :    
+https://semrom.fr/jeux/en/tic-tac-toe/tic-tac-toe.html
 
 Romain Semler ©2014
