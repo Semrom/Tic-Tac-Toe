@@ -1,0 +1,66 @@
+/*********************
+* Auteur : Romain SEMLER
+* Fichier : tic-tac-toe.css
+* Date : 07/09/2014
+***********************/
+h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#but {
+    border: 3px ridge #333;
+    padding: 10px;
+    text-decoration: none;
+    color:  blue;
+}
+
+#but:hover {
+    color: black;
+    background-color: yellow;
+}
+
+#Jeu {
+    width: 600px;
+    height: 600px;
+    overflow: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+#Jeu button {
+    border-color: #EBEBEB;
+}
+
+#Jeu div {
+    width: 500px;
+    margin: auto;
+    clear: both;
+}
+
+#Jeu button {
+    width: 150px;
+    height: 150px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 8px;
+    float: left;
+}
+
+#StatutJeu {
+    color: #EBEBEB;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 5px ridge #EBEBEB;
+}
+
+#pied {
+    text-align: center;
+    font-size: 18px;
+}
